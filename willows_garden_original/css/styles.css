@@ -1,0 +1,132 @@
+/**************
+Color Scheme:
+Green: #55FF06;
+Olive: #697E26;
+Blue: #1b7af7;
+Pink: #ff0073;
+
+**************/
+
+html, body {
+  height: 100%;
+  background-color: #49503D;
+}
+
+/*******************************
+  Navigation
+*******************************/
+nav {
+  background-color: #1b7af7;
+  padding: 1em 0;
+  border: 5px groove #ff0073;
+}
+
+nav ul {
+  list-style: none;
+  text-align: center;
+}
+
+nav ul li {
+  display: inline;
+  padding: 0 2em;
+}
+
+/*******************************
+  Links
+*******************************/
+nav ul li a:link,
+a:link {
+  color: #fff;
+}s
+
+nav ul li a:visited,
+a:visited {
+  color:#55FF06;
+}
+
+nav ul li a:hover,
+a:hover {
+  color: #ff0073;
+}
+
+/*******************************
+  Button
+*******************************/
+
+.btn-container {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.btn-container a:link {
+  border: 5px groove #ff0073;
+  color: #fff;
+  padding: .7em;
+  font-size: 1.5em;
+}
+
+.btn-container a:hover {
+  background-color: #55FF06;
+}
+
+/*******************************
+  Background Garden Tips page
+*******************************/
+
+#tipsBkgd {
+  background-image: url(../images/veggieBackground.jpg);
+  padding: 3em;
+}
+
+#tipsBkgd div {
+  background-color: #fff;
+  opacity: .8;
+  width: 60%;
+  margin: 0 auto;
+  padding: 2em;
+}
+
+
+/*******************************
+  Headings
+*******************************/
+h1, h2 {
+  color: #ff0073;
+}
+
+h3, h4 {
+  color: #55FF06;
+}
+
+/*******************************
+  Main Content
+*******************************/
+p {
+  font-weight: bold;
+  text-align: justify;
+}
+
+blockquote {
+  font-size: 1.3em;
+  font-style: italic;
+  color: #55FF06;
+}
+
+/*******************************
+  Images
+*******************************/
+img#food {
+  float: right;
+}
+
+
+/*******************************
+  Form
+*******************************/
+form {
+  width: 50%;
+  margin: 0 auto;
+  background-color: #2B2A16;
+  padding: 2em;
+  color: #fff;
+}
