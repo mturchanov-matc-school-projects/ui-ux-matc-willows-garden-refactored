@@ -1,0 +1,141 @@
+/******************
+    Form Styles/Plot Order
+******************/
+
+fieldset {
+    width: 100%;
+}
+
+input,
+select {
+    padding: 10px 13px;
+    margin: 10px 0 30px 0;
+    font-size: 18px;
+}
+
+select {
+    width: 100%;
+}
+
+input[type="submit"] {
+    background: #007fb0;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #fff;
+    padding: 10px 15px;
+    width: 40%;
+    display: block;
+    margin: 0 auto;
+}
+
+input[type="submit"]:hover {
+    background: #015677;
+    transition: 1s;
+}
+
+input[name="returning"] {
+    margin: 0 auto;
+}
+
+small {
+    display: block;
+}
+
+legend {
+    width: unset;
+    border-bottom: none;
+}
+
+form#buyPlotForm {
+    border: 1.5px solid black;
+    padding: 1.5em;
+    width: 60%;
+    margin: 1em auto;
+}
+
+fieldset#personalInfoForm input {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+}
+
+::placeholder,
+p,
+legend,
+h2,
+h3 {
+    text-align: center;
+}
+
+h3 {
+    margin: 2em 0 1em;
+}
+
+
+/* 
+   Because bootstrap overrides initial 
+   fieldset, there's repeating css
+   of default one 
+*/
+
+fieldset {
+    display: block;
+    margin-inline-start: 2px;
+    margin-inline-end: 2px;
+    padding-block-start: 0.35em;
+    padding-inline-start: 0.75em;
+    padding-inline-end: 0.75em;
+    padding-block-end: 0.625em;
+    min-inline-size: min-content;
+    border-width: 2px;
+    border-style: groove;
+    border-color: black;
+    border-image: initial;
+    margin: 1em auto;
+}
+
+fieldset#isReturnerForm div.centerEls {
+    margin: 0 auto;
+    width: 10%;
+}
+
+fieldset#chooseTeamForm div.centerEls {
+    margin: 0 auto;
+    width: 50%;
+}
+
+fieldset#chooseTeamForm p {
+    text-align: justify;
+    line-height: 180%;
+}
+
+span#checkTheBox {
+    font-style: oblique;
+}
+
+
+/**********************
+Plot Description/Main
+**********************/
+
+img {
+    border: 0.15em #fff solid;
+    box-shadow: 0.1em 0.1em 0.4em black;
+    width: 41%;
+    float: right;
+    margin: 1em;
+    clear: both;
+    max-width: 400px;
+    border-radius: 5px;
+}
+
+.plotDescription {
+    width: 50%;
+    margin-top: 2.3em;
+    line-height: 200%;
+    text-align: justify;
+}
+
+footer#footerContent {
+    clear: both;
+}

@@ -1,0 +1,169 @@
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.42857143;
+  color: #333;
+  background-color: #eee;
+}
+
+
+/*********************************************
+  skip to content/accessible/right after body
+/* ***********************************************/
+
+.skipLink {
+  position: absolute;
+  left: -1000px;
+}
+
+.skipLink:focus,
+.skipLink:active {
+  left: 0;
+}
+
+a.nav-item:hover,
+a.nav-item:focus {
+  color: #000000 !important;
+  /* background-color: red !important; */
+  transition-duration: .5s;
+  box-shadow: 0.2em 0.2em 0.2em 2px grey;
+}
+
+
+/*******************************
+Navigation
+*******************************/
+
+.jumbotron {
+  background-color: #F6F6F6;
+  color: #286090 !important;
+  font-family: Montserrat, sans-serif;
+  border-bottom: 2px solid #286090;
+  /* background-image:url("../images/papers5.jpg"); */
+  background-size: cover;
+  height: 15em;
+  margin-bottom: 0;
+  width:77%;
+  margin: 0 auto;
+}
+
+.jumbotron p {
+  color: #286090;
+}oko
+
+#myNavbar {
+  transition: 0.4s;
+}
+
+a.nav-item {
+  font-variant: small-caps;
+}
+
+.navbar-default .navbar-nav>li>a,
+.navbar-default .navbar-brand {
+  color: #2d2a2a;
+}
+
+
+/***************
+Main
+***************/
+
+main#mainContent {
+  width: 77%;
+  margin: 0 auto;
+  padding: 0 4em 1em 4em;
+  font-size: 20px;
+  color: #212529;
+  font-family: Lora, 'Times New Roman', serif;
+  background-color: #fff;
+}
+
+a:hover, 
+.jumbotron p:hover {
+  color: #014fff;
+  transition: .7s;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #970792;
+}
+
+hr {
+  border-top: 1.5px solid #eee;
+}
+
+img {
+  max-width: 100%;
+  /* make images responsive */
+}
+
+span.fancyLetter {
+  width: 0.7em;
+  font-size: 200%;
+  /* font-family: algerian, courier; */
+  line-height: 80%;
+}
+
+p.blockquote-footer::before {
+  content: "\2014 \00A0";
+}
+
+p.blockquote-footer {
+  font-size: 80%;
+  line-height: 1.42857143;
+  color: #777;
+  display: block;
+}
+
+
+/*******************************
+Footer
+*******************************/
+
+h2,
+h3 {
+  text-align: center;
+}
+
+h2 {
+  margin: 0;
+  padding: 2em 0 0 0;
+}
+
+footer.page-footer {
+  background-color: #fff;
+  color: #212529;
+  border-top: #286090 2px solid;
+  padding: .5em;
+}
+
+/* footer.page-footer a:hover,
+p a:hover {
+  color: #F9A704;
+} */
+
+footer a[href="#"] {
+  background-color: #fff;
+  padding: 16px 10px;
+  border: 0.17em solid #286090;
+  border-radius: 15px;
+}
+
+.up-arrow {
+  display: block;
+}
+
+footer.page-footer blockquote {
+   padding: 0;
+}
+
+blockquote p:last-child {
+  color: #212529;
+
+}
+
+.authorText {
+  font-size: smaller;
+}

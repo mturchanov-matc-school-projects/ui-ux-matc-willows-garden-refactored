@@ -1,0 +1,14 @@
+main p {
+    margin-top: 2.3em;    
+    text-align: justify;
+}
+
+h2 {
+    text-align: center;
+}
+
+main li {
+    width: 75%;
+    margin: 2em auto;
+    line-height: 200%;
+}

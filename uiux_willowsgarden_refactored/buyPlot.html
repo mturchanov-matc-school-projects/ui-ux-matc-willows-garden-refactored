@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="A garden plot refers to a designated area set up for planting. 
+                                            You can grow food, flowers, or both in a garden plot. We provide the best garden plot you could find!">
+        <title>Buy a Plot</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/buyPlot.css">
+    </head>
+
+    <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+        <a href="#mainContent" class="skipLink">Skip to the main content</a>
+        <a href="#footerContent" class="skipLink">Skip to the footer content</a>
+        <header>
+            <nav class="navbar navbar-default navbar-fixed-top" id="myNavbar">
+                <div class="container">
+                    <div class="collapse navbar-collapse" >
+                        <a class="navbar-brand nav-item" href="index.html">home</a>
+                        <ul class="nav navbar-nav navbar-right nav-icons">
+                            <li><a class="nav-item" href=buyPlot.html>apply for a plot</a></li>
+                            <li><a class="nav-item" href="#">contact</a></li>
+                            <li><a class="nav-item" href="gardeningTips.html">gardening tips</a></li>
+                            <li><a class="nav-item" href="#">volunteer</a></li>
+                            <li><a class="nav-item" href="#">for the kids</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <div class="jumbotron text-center">
+                <h1>Plot Offer</h1>
+                <a href="index.html">                    
+                    <p>Become the part of our community</p>
+                </a>
+            </div>
+        </header>
+
+        <main id="mainContent">
+            
+            <h2>Thank you for your interest in Willow Gardens!</h2>
+            <h3>General Plot Information</h3>
+            <a href="images/gardenPlot.jpg"><img class="gardenPicture" src="images/gardenPlot.jpg"  alt="garden plot with different vegetables"></a>
+            <a href="images/gardenPlot2.jpg"><img class="gardenPicture" src="images/gardenPlot2.jpg"  alt="growing vegetables at the garden plot"></a>
+            <p class="plotDescription"><span class="fancyLetter">O</span>ur garden plots measure approximately 20' x 20' (400 sq.ft.). 
+                The maximum number of plots per gardener is 4 plots. 
+                Gardeners may work in their plots at any time of the year, provided they follow the garden rules.
+                Only organic gardening methods are allowed. We do not till any sections of our gardens, which allows gardeners to 
+                plant perennials such as asparagus and strawberries and leave up fences, if desired, throughout the year.
+            </p>
+            <p class="plotDescription">$15, $43, or $78 per plot/year, depending on your income level and size of household/garden family.</p>
+            <p class="plotDescription">Water is provided on site throughout the season. Garden tools are available for everyone to use.
+                 Free wood chips are provided gardener use. We offer hay and row cover for sale on our application.</p>
+            <hr>
+            <p>Please submit the below form to request your garden plot</p>
+            <form id="buyPlotForm" 
+                action="http://itins3.madisoncollege.edu/echo.php"
+                method="post">
+                <fieldset id="isReturnerForm">
+                    <legend>Are you a returning gardener?</legend>
+                    <div class="centerEls">
+                        <input type="radio" id="returningCust" name="returning" value="yes"
+                            aria-describedby="returningCust">
+                        <label for="returningCust">Yes</label>
+                        <br>
+                        <input type="radio" id="noReturningCust" name="returning" value="no"
+                            aria-describedby="returningCust">
+                        <label for="noReturningCust">No</label>
+                    </div>
+                </fieldset>
+                <br>
+                <fieldset id="personalInfoForm">
+                    <legend>Personal Information</legend>
+                    <label for="firstName">First Name:</label>
+                    <input id="firstName" name="firstName" type="text" required placeholder="First Name">
+                    <br>
+                    <label for="lastName">Last Name:</label>
+                    <input id="lastName" name="lastName" required type="text" placeholder="Last Name">
+                    <br>
+                    <label for="email">Email:</label>
+                    <input id="email" name="email" required type="email" placeholder="Email">
+                    <br>
+                    <label for="phone">Phone:</label>
+                    <input id="phone" name="phone" required type="text" placeholder="Phone">
+                </fieldset>
+                <br>
+                <fieldset>
+                    <legend>Plot Info</legend>
+                    <label for="numberOfPlots">Number of plots:</label>
+                    <small>*Limit of 4 plots per gardener</small>
+                    <select id="numberOfPlots" name="numberOfPlots" required>
+                        <option disabled value="--select"></option>
+                        <option value="01">1</option>
+                        <option value="02">2</option>
+                        <option value="03">3</option>
+                        <option value="04">4</option>
+                    </select>
+                </fieldset>
+                <fieldset id="chooseTeamForm">
+                    <legend>Join a Garden Team</legend>
+                    <!-- <p id="joinUs">Join a Garden Team!</p> -->
+                    <p>Teams are a great way to get to know other gardeners and volunteer on your own schedule. You will not be asked
+                        to work more than your required volunteer hours due. <span id="checkTheBox">Check the box for each team you are 
+                        interested in</span>, we will email you more info
+                    </p>
+                    <div class="centerEls">
+                        <input type="checkbox" name="mentor" value="mentor" id="mentor">
+                        <label for="mentor">New Garden Mentor</label>
+                        <br>
+                        <input type="checkbox" name="plot" value="plot" id="plot">
+                        <label for="plot">Plot Maintenance </label>
+                        <br>
+                        <input type="checkbox" name="water" id="water" value="water">
+                        <label for="water">Water Maintenance </label>
+                        <br>
+                        <input type="checkbox" name="equipment" id="equipment" value="equipment">
+                        <label for="equipment">Equipment Maintenance </label>
+                    </div>
+                    <br>
+                </fieldset>
+                <input type="submit" name="plotOrder" value="Submit">   
+            </form>
+        </main>
+
+        <footer class="page-footer" id="footerContent">
+            <a href="#">Contact Us</a>
+            <a class="up-arrow text-center" href="#myPage" data-toggle="tooltip" title="TO TOP">
+            <span class="glyphicon glyphicon-chevron-up"></span>
+            </a>
+            <br>
+            <blockquote class="blockquote text-center">
+                <p class="mb-0">
+                    <i class="fas fa-angle-double-left"></i>
+                    Being a part of Willow Gardens has brought healthy food to our table and created an activity the entire family can enjoy!
+                    <i class="fas fa-angle-double-right"></i>
+                </p>
+                <!-- <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Abby Greenthumb</cite></footer> -->
+                <p class="blockquote-footer">Someone famous in <cite title="Source Title">Abby Greenthumb</cite></p>
+            </blockquote>
+            <p class="text-left authorText">Developed by: <a href="mailto:mturchanov@madisoncollege.edu">https://mturchanov@madisoncollege.edu</a></p>
+        </footer>
+
+        <script src="js/hideNav.js"></script>
+        <script src="js/scrollAnim.js"></script>
+        <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    </body>
+</html>

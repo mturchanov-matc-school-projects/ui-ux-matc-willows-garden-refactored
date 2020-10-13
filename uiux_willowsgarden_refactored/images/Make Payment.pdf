@@ -1,0 +1,403 @@
+
+
+
+
+
+
+
+  
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<!-- SN  -->
+<!-- TouchNet Bill&#x2b;Payment Suite 7.8.0 HF 4 Build 3 &#x28; 04&#x2f;13&#x2f;2020 22&#x3a;14&#x3a;55 UTC &#x29; -->
+<head>
+  <!-- Required meta tags always come first -->
+  <meta charset="utf-8">
+
+  
+
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="description" content="TouchNet Information Systems, Inc. - Bill+Payment">
+
+  
+
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/C21002_tsa/web/images/apple-touch-icon-144-precomposed.png">
+<link rel="shortcut icon" href="/C21002_tsa/web/images/favicon.ico">
+
+<link rel="StyleSheet" href="/C21002_tsa/web/styles/ckeditor-contents.css" />
+<link rel="stylesheet" type="text/css" href="/C21002_tsa/web/lib/bootstrap/3.3.7/css/bootstrap.min.css" media="all" />
+<link rel="stylesheet" type="text/css" href="/C21002_tsa/web/lib/font-awesome/4.7.0/css/font-awesome.min.css" media="all" />
+<link rel="stylesheet" type="text/css" href="/C21002_tsa/web/lib/datatables/1.10.15/datatables.min.css" media="all" />
+<link rel="stylesheet" type="text/css" href="/C21002_tsa/web/styles/tbpmain.css" media="all" />
+<link rel="stylesheet" type="text/css" href="/C21002_tsa/web/styles/loading.css"/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <link rel="stylesheet" href="/C21002_tsa/web/styles/non-responsive.css" media="all"/>
+
+
+<!--
+Responsive licensed: false | Mobile device: false
+-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<style>
+  /*
+  header colors
+  */
+  
+  
+  
+  
+
+  /*
+  menu navigation colors
+  */
+  
+  
+  
+
+  /*
+  primary button colors
+  */
+  
+  
+  
+  
+
+  /*
+  secondary buttons colors
+  */
+  
+  
+  
+  
+
+  /*
+  footer colors
+  */
+  
+  
+  
+  
+
+  /*Express Payment widget colors*/
+  
+  
+</style>
+
+  
+
+<script type="text/javascript" src="/C21002_tsa/web/js/jquery/jquery-3.2.0.min.js"></script>
+<script type="text/javascript" src="/C21002_tsa/web/lib/tether/1.3.3/js/tether.min.js"></script>
+<script type="text/javascript" src="/C21002_tsa/web/lib/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/C21002_tsa/web/js/bootstrap-accessibility.js"></script>
+<script type="text/javascript" src="/C21002_tsa/web/js/extend.js"></script>
+<script type="text/javascript" src="/C21002_tsa/web/js/common.js"></script>
+<script type="text/javascript" src="/C21002_tsa/web/js/currency.js"></script>
+<script type="text/javascript" src="/C21002_tsa/web/js/toggle_lang.js"></script>
+<script type="text/javascript" src="/C21002_tsa/web/js/bootstrap-modal/bootstrap-modals.js"></script><script type="text/javascript" src="/C21002_tsa/web/js/bootstrap-modal/bootstrap-modals.i18n-en.js"></script>
+<script type="text/javascript" src="/C21002_tsa/web/js/jquery/jquery.timers.js"></script>
+<script type="text/javascript" src="/C21002_tsa/web/js/jquery/jquery.bootstrap.stackable.modals.js"></script>
+<script type="text/javascript" src="/C21002_tsa/web/js/spinner.js"></script>
+<script type="text/javascript" src="/C21002_tsa/web/lib/datatables/1.10.15/datatables.min.js"></script><script type="text/javascript" src="/C21002_tsa/web/lib/datatables/1.10.15/datatables.i18n-en.min.js"></script>
+<script type="text/javascript" src="/C21002_tsa/web/js/datatables-init.js"></script>
+<script type="text/javascript" src="/C21002_tsa/web/js/datatables-fixes.js"></script>
+<script type="text/javascript" src="/C21002_tsa/web/js/datatables-defaults.js"></script>
+<script type="text/javascript" src="/C21002_tsa/web/js/ajax-submit.js"></script>
+<script type="text/javascript" src="/C21002_tsa/web/js/apple_pay.js"></script>
+<script type="text/javascript" src="/C21002_tsa/web/js/polyfills.js"></script>
+
+
+
+
+
+
+
+
+
+
+<script>
+
+  
+
+</script>
+
+
+
+
+
+
+<script type="text/javascript" src="/C21002_tsa/web/js/formValidation.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+  <title>Cookies Not Available</title>
+
+  
+    
+  
+</head>
+
+<body id="" class="" onload="">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="skipNav">
+  <a id="skipNavigationToMainContent" class="sr-only sr-only-focusable" href="#skipNavigationToMainContent">
+    Skip to Main Content
+  </a>
+</div><!--used for skip navigation-->
+
+<div id="ariaLive" class="hidden">
+  <div id="mainLiveRegion" role="log" aria-live="assertive" aria-atomic="false" aria-relevant="text"></div>
+</div><!-- it is used for 508 compliance - this invisible field is for screen readers in situations when we update some area
+without having focus on it -->
+
+<script type="text/javascript" src="/C21002_tsa/web/js/skip_navigation.js"></script>
+<script>
+    $( function()
+    {
+      $( "a.payment-date-skip-navigator" ).skip_navigation( "#paymentDatePicker" );
+      $( "a.additional-items-skip-navigator" ).skip_navigation( "#submitBtn" );
+
+      var skipFocus = function( navOrContent )
+      {
+        var contentSelectorWrapper = ".container, .container-fluid";
+        var navSelectorWrapper = "nav";
+        var focusSelectors = [ "*[tabindex]:visible", "input:visible", "select:visible",
+                               "textarea:visible", "button:visible", "a:visible" ];
+
+        var focusToSelector = "";
+
+        if ( navOrContent === "nav" )
+        {
+          focusToSelector = navSelectorWrapper;
+        }
+        else if ( navOrContent === "content" )
+        {
+          focusToSelector = contentSelectorWrapper;
+        }
+
+        $( focusToSelector ).find( focusSelectors.join() ).first().focus();
+      };
+
+      var skipToNavClickHandler = function( event )
+      {
+        event.preventDefault();
+        skipFocus( "nav" );
+      };
+
+      var skipToContentClickHandler = function( event )
+      {
+        event.preventDefault();
+        skipFocus( "content" );
+      };
+
+      $( '#skipToNav' ).bind( "click", skipToNavClickHandler );
+      $( '#skipNav' ).bind( "click", skipToContentClickHandler );
+    } );
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+    <header id="header" class="pageHeader">
+    <a class="pull-left hidden-print inactiveLink" aria-label=" Home Page"
+       href="">
+      <img class="hidden-print img-responsive" src="/C21002_tsa/web/images/header.jpg" alt=" Home Page">
+    </a>
+  
+  <div class="printHeader">
+    <img id="printHeader" src="/C21002_tsa/web/images/printHeader.jpg" alt="Bill+Payment Header">
+  </div>
+
+  
+
+  
+    </header>
+  
+
+
+
+
+
+
+  
+    
+
+
+<div class="row pt-3 pb-3 pl-3">
+  <div class="col-xs-12">
+    <h2 class="pb-2">How to Enable Cookies&#x3a;</h2>
+    <h3>Microsoft Edge</h3>
+    <ol>
+      <li>Click the <b>Settings and more</b>
+ button on the toolbar, and select <b>Settings.</b></li>
+      <li>Select the <b>Privacy &amp; security</b>
+ tab.</li>
+      <li>Under <b>Cookies</b>
+ section, select to either <b>Don't block cookies</b>
+ (default) or <b>Block only third party cookies.</b></li>
+    </ol>
+    <h3>Mozilla Firefox</h3>
+    <ol>
+      <li>Click the <b>Firefox menu</b>
+ button and choose <b>Options.</b></li>
+      <li>Select the <b>Privacy</b>
+ and <b>Security</b>
+ tab.</li>
+      <li>Select <b>Accept cookies and site data from websites (recommended).</b>
+        <ul>
+          <li>Select Keep until: They expire.</li>
+          <li>Select Accept third-party cookies and site data: From visited or Always.</li>
+        </ul>
+      </li>
+    </ol>
+    <h3>Google Chrome</h3>
+    <ol>
+      <li>Click the Chrome menu icon <img width="29" height="29" title="Chrome menu" alt="Chrome menu" src="//storage.googleapis.com/support-kms-prod/ArAlBcUAe8h1l5m69uxnwElxkqwW0QdtIc3F">.</li>
+      <li>Select <b>Settings.</b></li>
+      <li>At the bottom of the page, click <b>Show advanced settings.</b></li>
+      <li>In the <b>Privacy</b>
+ section, click <b>Content settings.</b></li>
+      <li>To enable cookies, select <b>Allow local data to be set (recommended).</b></li>
+      <li>Click <b>Done</b>
+ to save.</li>
+    </ol>
+    <h3>Apple Safari</h3>
+    <ol>
+      <li>Click the <b>Safari</b>
+ menu, choose <b>Preferences.</b></li>
+      <li>Click on the <b>Privacy</b>
+ tab.</li>
+      <li>Choose <b>Allow from Websites I visit<b> or <b>Always Allow</b> option.</b>
+</b></li>
+    </ol>
+    <h3>Safari for iOS</h3>
+    <ol>
+      <li>Open the <b>Settings</b>
+ App.</li>
+      <li>Scroll and tap on the <b>Safari</b>
+ item.</li>
+      <li>Scroll down and tap on <b>Block Cookies.</b></li>
+      <li>Choose <b>Allow from Websites I visit</b>
+ or <b>Always Allow</b>
+ option.</li>
+    </ol>
+  </div>
+</div>
+
+  
+
+  
+
+
+
+
+
+
+
+<footer class="footer">
+  <div class="container-fluid footer-content">
+    <div class="row">
+      <div class="col-xs-8 footerLegal">
+        <span>
+          &copy;<script type="text/javascript"> document.write(new Date().getFullYear());</script> TouchNet <sup>&reg;</sup> <i>A<strong> Global Payments </strong>Company</i><span class="px-1">|</span>All rights reserved.<span class="px-1">|</span><a class="text-underline" href="http://www.touchnet.com/web/display/TN/Privacy+Policy" target="_blank">Privacy Statement<span class="sr-only">Opens in new window</span></a>
+        </span>
+      </div>
+      <div class="col-xs-4">
+        <span class="pull-right footerLogo">
+          <img class="img-responsive" src="/C21002_tsa/web/images/touchnet_logo.png" alt="TouchNet Secured Logo">
+        </span>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+
+</html>
